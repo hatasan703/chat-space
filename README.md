@@ -25,7 +25,7 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|group_name|string|null: false, unique: true, index|
+|group_name|string|null: false, unique: true|
 
 ### Association
 - has_many :messages
@@ -46,4 +46,6 @@
 ### Association
 - belongs_to :user
 - belongs_to :group
+
+
 
