@@ -2,12 +2,12 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|name|string|null: false, foreign_key: true|
+|name|string|null: false, foreign_key: true, unique: true|
 
 ### Association
 - has_many :messages
-- has_many :members
-- has_many :groups, through: :members
+- has_many :group_users
+- has_many :groups, through: :group_users
 
 
 ## group_users table
@@ -25,12 +25,12 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|group_name|string|null: false, unique: true|
+|name|string|null: false, unique: true|
 
 ### Association
 - has_many :messages
-- has_many :members
-- has_many :users through: :members
+- has_many :group_users
+- has_many :users through: :group_users
 
 
 ## messages table
