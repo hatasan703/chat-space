@@ -4,11 +4,17 @@
   background-color: #2f3e51;
   // margin: left;
 
-  .top_side_content {
+  header {
     height: 100px;
     background-color: #253141;
 
-
+    .user_name{
+      display: inline-block;
+      font-size: 16px;
+      font-weight: bold;
+      color: white;
+      background-color: blue;
+    }
   }
 
 }
