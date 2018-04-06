@@ -22,7 +22,11 @@
       height: 100px;
       width: 35.05px;
 
-
+      li.list {
+        display: inline-block;
+        height: 100px;
+        line-height: 100px;
+      }
     }
   }
 
