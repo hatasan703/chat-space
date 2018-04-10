@@ -33,7 +33,14 @@
   .groups {
     height: calc(100vh - 100px);
     padding: 0 20px;
+
+    .group {
+      height: 45px;
+      width: 260;
+      padding: 20px 0 40px;
+    }
   }
+
 
 }
 
