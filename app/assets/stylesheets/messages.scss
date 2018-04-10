@@ -48,7 +48,14 @@
       }
     }
   }
+}
 
+.main_content {
+  height: 100vh;
+  width: calc(100% - 300px);
+  position: absolute;
+  top: 0px;
+  right: 0px;
 
 }
 
