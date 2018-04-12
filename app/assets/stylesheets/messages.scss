@@ -60,7 +60,7 @@
     height: 100px;
     padding: 0 40px;
 
-    .left_header{
+    .left-header{
       float: left;
       width: 215.73px;
       height: 98px;
@@ -79,7 +79,19 @@
             display: inline-block;
           }
         }
+    }
 
+    .right-header {
+      border: 1px solid #38AEF0;
+      color: #38AEF0;
+      float: right;
+      height: 40px;
+      padding: 0 20px;
+      margin-top: 28px;
+
+      .right-header__button {
+        line-height: 40px;
+      }
     }
   }
 }
