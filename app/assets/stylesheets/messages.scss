@@ -103,6 +103,12 @@
 
       .upper-message {
         display: flex;
+
+        .upper-message__user-name {
+          font-size: 16px;
+          color: #434A54;
+          font-weight: bold;
+        }
       }
     }
   }
