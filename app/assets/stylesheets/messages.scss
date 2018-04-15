@@ -115,6 +115,14 @@
           padding-left: 10px;
         }
       }
+      .under-message {
+        margin-top: 10px;
+        .under-message__user-message {
+          color: #434A54;
+          font-size: 14px;
+          margin-bottom: 10px;
+        }
+      }
     }
   }
 }
