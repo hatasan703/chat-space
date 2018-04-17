@@ -95,6 +95,7 @@
   }
   .messages {
     height: calc(100vh - 190px);
+    box-sizing: border-box;
     background-color: #FAFAFA;
     padding: 46px 40px 0;
 
@@ -125,6 +126,7 @@
       }
     }
   }
+
 }
 
 
