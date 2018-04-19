@@ -38,6 +38,12 @@
       height: 45px;
       width: 260;
       padding: 20px 0 40px;
+      text-decoration: underline;
+      text-decoration-color: purple;
+       &:active {
+          text-decoration: underline;
+          text-decoration-color: red;
+        }
 
       .group__name {
         font-size: 15px;
