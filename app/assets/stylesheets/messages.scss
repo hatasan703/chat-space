@@ -1,6 +1,5 @@
 .side_content {
   width: 300px;
-  // height: 100vh;
   color: #fff;
   background-color: #2f3e51;
 
@@ -153,6 +152,16 @@
       float: left;
       padding-right: 10px;
       background-color: #FFFFFF
+    }
+    .form__submit {
+      height: 50px;
+      border: none;
+      background-color: #38AEF0;
+      float: right;
+      padding: 0 30px;
+      font-size: 17px;
+      margin-left: 15px;
+      color: #FFFFFF;
     }
   }
 }
