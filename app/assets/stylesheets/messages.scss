@@ -8,7 +8,7 @@
     background-color: #253141;
     padding: 0 20px;
 
-    .header__name{
+    &__name {
       display: inline-block;
       height: 100px;
       font-size: 16px;
@@ -16,7 +16,7 @@
       line-height: 100px;
     }
 
-    .header__lists {
+    &__lists {
       float: right;
       height: 100px;
       width: 35.05px;
@@ -44,10 +44,10 @@
           text-decoration-color: red;
         }
 
-      .group__name {
+      &__name {
         font-size: 15px;
       }
-      .group__message {
+      &__message {
         font-size: 11px;
         margin-top: 5px;
       }
@@ -70,11 +70,11 @@
       width: 215.73px;
       height: 98px;
 
-      .left-header__title {
+      &__title {
         font-size: 20px;
         margin-top: 35px;
       }
-      .left-header__members {
+      &__members {
           font-size: 12px;
           margin-top: 15px;
           color: #999999;
@@ -93,7 +93,7 @@
       padding: 0 20px;
       margin-top: 28px;
 
-      .right-header__button {
+      &__button {
         line-height: 40px;
       }
     }
@@ -110,12 +110,12 @@
       .upper-message {
         display: flex;
 
-        .upper-message__user-name {
+        &__user-name {
           font-size: 16px;
           color: #434A54;
           font-weight: bold;
         }
-        .upper-message__date {
+        &__date {
           color: #999999;
           font-size: 12px;
           padding-left: 10px;
@@ -123,7 +123,7 @@
       }
       .under-message {
         margin-top: 10px;
-        .under-message__user-message {
+        &__user-message {
           color: #434A54;
           font-size: 14px;
           margin-bottom: 10px;
@@ -137,7 +137,7 @@
     padding: 20px 50px 20px 40px;
     box-sizing: border-box;
 
-    .form__message {
+    &__message {
       height: 50px;
       width: calc(100% - 150px);
       padding : 0 10px;
@@ -145,7 +145,7 @@
       border: none;
       float:left
     }
-    .form-photo-icon {
+    &-photo-icon {
       line-height: 50px;
       font-size: 20px;
       height: 50px;
@@ -153,7 +153,7 @@
       padding-right: 10px;
       background-color: #FFFFFF
     }
-    .form__submit {
+    &__submit {
       height: 50px;
       border: none;
       background-color: #38AEF0;
