@@ -1,11 +1,11 @@
 .side_content {
   width: 300px;
-  color: #fff;
-  background-color: #2f3e51;
+  color: $white;
+  background-color: $navy;
 
   .header {
     height: 100px;
-    background-color: #253141;
+    background-color: $dark_navy;
     padding: 0 20px;
 
     &__name {
@@ -101,7 +101,7 @@
   .messages {
     height: calc(100vh - 190px);
     box-sizing: border-box;
-    background-color: #FAFAFA;
+    background-color: $light_grey;
     padding: 46px 40px 0;
 
     .message {
@@ -112,11 +112,11 @@
 
         &__user-name {
           font-size: 16px;
-          color: #434A54;
+          color: $dark_grey;
           font-weight: bold;
         }
         &__date {
-          color: #999999;
+          color: $grey;
           font-size: 12px;
           padding-left: 10px;
         }
@@ -124,7 +124,7 @@
       .under-message {
         margin-top: 10px;
         &__user-message {
-          color: #434A54;
+          color: $dark_grey;
           font-size: 14px;
           margin-bottom: 10px;
         }
@@ -133,7 +133,7 @@
   }
   .form {
     height: 90px;
-    background-color: #DDDDDD;
+    background-color: $silver_grey;
     padding: 20px 50px 20px 40px;
     box-sizing: border-box;
 
@@ -151,17 +151,17 @@
       height: 50px;
       float: left;
       padding-right: 10px;
-      background-color: #FFFFFF
+      background-color: $form_white;
     }
     &__submit {
       height: 50px;
       border: none;
-      background-color: #38AEF0;
+      background-color: $light_blue;
       float: right;
       padding: 0 30px;
       font-size: 17px;
       margin-left: 15px;
-      color: #FFFFFF;
+      color: $form_white;
     }
   }
 }
