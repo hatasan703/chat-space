@@ -25,6 +25,9 @@
         display: inline-block;
         height: 100px;
         line-height: 100px;
+        i {
+          color: $white;
+        }
       }
     }
   }
