@@ -1,3 +1,17 @@
+@mixin btn($color) {
+  margin-top: 20px;
+  color: $white;
+  background-color:$color;
+  display: inline-block;
+  height: 50px;
+  padding: 0 30px;
+  line-height: 50px;
+  letter-spacing: 1px;
+  text-align: center;
+  border: none;
+  border-radius: 2px;
+}
+
 .account-page {
   .account-page__inner {
     width: 980px;
@@ -40,11 +54,9 @@
       font-weight: 200;
     }
 
-    .btn {
-      margin-top: 20px;
-      color: $white;
-      background-color: $light_grey2;
+    .sign_in_btn {
       font-size: 14px;
+      @include btn($light_grey2);
     }
   }
 
@@ -71,22 +83,14 @@
     }
   }
 
-  .btn {
-    display: inline-block;
-    height: 50px;
-    padding: 0 30px;
-    line-height: 50px;
-    letter-spacing: 1px;
-    text-align: center;
-    border: none;
-    border-radius: 2px;
+  .home_btn {
+    font-size: 14px;
+    @include btn($light_grey2);
   }
 
   input[type='submit'] {
     float: left;
-    margin-top: 20px;
-    color: $white;
-    background-color: $light_blue;
+    @include btn($light_blue);
   }
 
   .field-label {
