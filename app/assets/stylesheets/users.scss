@@ -58,6 +58,10 @@
       font-size: 14px;
       @include btn($light_grey2);
     }
+    .sign_up_btn {
+      font-size: 14px;
+      @include btn($light_grey2);
+    }
   }
 
   .field {
