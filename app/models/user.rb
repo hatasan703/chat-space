@@ -27,6 +27,5 @@ class User < ApplicationRecord
   has_many :group_users
   has_many :groups, through: :group_users
 
-  validates :name, :email, presence: true
-  validates :name, :email, uniqueness: true
+  validates :name, :email, uniqueness: true, presence: true
 end
