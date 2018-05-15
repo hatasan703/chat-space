@@ -1,7 +1,7 @@
 = form_for @group do |f|
-  - if @group.error_messages_count
+  - if @group.error_messages
     .chat-group-form__errors
-      %h2= "#{@group.error_messages}件のエラーが発生しました。"
+      %h2= "#{@group.error_messages_count}件のエラーが発生しました。"
       %ul
         - @group.error_messages.each do |message|
           %li= message
