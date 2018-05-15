@@ -17,6 +17,10 @@ class Group < ApplicationRecord
     self.errors.full_messages
   end
 
+  def user_all
+    @users = User.all
+  end
+
   has_many :group_users
   has_many :users, through: :group_users
   validates :name, uniqueness: true, presence: true
