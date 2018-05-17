@@ -105,6 +105,7 @@
     box-sizing: border-box;
     background-color: $light_grey;
     padding: 46px 40px 0;
+    overflow: scroll;
 
     .message {
       margin-bottom: 40px;
