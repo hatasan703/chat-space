@@ -19,6 +19,10 @@ class GroupsController < ApplicationController
     end
   end
 
+  def edit
+    @users = User.all
+  end
+
   def update
     @users = User.all
     if @group.update(group_params)
