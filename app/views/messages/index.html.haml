@@ -33,13 +33,7 @@
       Edit
 
   .messages
-    .message
-      .message__user-name
-        ユーザー名
-      .message__date
-        2018/3/01 01:01
-      .message__user-message
-        おはようございます
+    = render @messages
 
   .form
     = form_for [@group, @message] do |f|
