@@ -62,3 +62,4 @@ gem 'devise'
 gem 'carrierwave'
 gem 'mini_magick'
 gem 'draper', '~> 1.3'
+
