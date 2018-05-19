@@ -20,3 +20,5 @@
 
 public/uploads/
 vendor/bundle/
+
+app/models/.group_user.rb.swp
