@@ -61,5 +61,4 @@ gem 'font-awesome-rails'
 gem 'devise'
 gem 'carrierwave'
 gem 'mini_magick'
-gem 'draper', '~> 1.3'
-
+gem 'draper'
