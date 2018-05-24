@@ -2,6 +2,8 @@ class GroupsController < ApplicationController
   before_action :set_group, only: %i(edit update)
 
   def index
+    current_user_groups = current_user.groups
+    @current_user_groups = GroupDecorator.decorate_collection(current_user_groups)
   end
 
   def new
@@ -11,7 +13,7 @@ class GroupsController < ApplicationController
 
   def create
     @users = User.all
-    @group = Group.new(group_params)
+    @group = Group.new(group_params).decorate
     if @group.save
       redirect_to root_path, notice: 'グループを作成しました'
     else
