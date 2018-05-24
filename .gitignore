@@ -18,7 +18,7 @@
 
 .byebug_history
 
-public/uploads/
-vendor/bundle/
+public/
+vendor/
 
 app/models/.group_user.rb.swp
