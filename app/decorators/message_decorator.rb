@@ -4,5 +4,9 @@ class MessageDecorator < Draper::Decorator
   def created_at
     object.created_at.strftime('%Y/%m/%d/ %H:%M')
   end
+
+  def image_url
+    object.image.url
+  end
 end
 
