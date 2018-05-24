@@ -13,7 +13,7 @@
           = fa_icon 'cog', class: 'icon'
 
   .groups
-    - current_user.groups.each do |group|
+    - @current_user_groups.each do |group|
       .group
         = link_to group_messages_path(group) do
           .group__name
