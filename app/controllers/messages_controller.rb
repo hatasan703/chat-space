@@ -4,12 +4,12 @@ class MessagesController < ApplicationController
   def index
     @message = Message.new
     @messages = @group.messages.includes(:user).decorate
-    current_user_groups = current_user.groups
-    @current_user_groups = GroupDecorator.decorate_collection(current_user_groups)
+    @current_user_groups = GroupDecorator.decorate_collection(current_user.groups)
   end
 
   def create
     @message = @group.messages.new(message_params)
+    @message.user = current_user
     if @message.save
       redirect_to group_messages_path(@group), notice: "メッセージが送信されました"
     else
@@ -22,7 +22,7 @@ class MessagesController < ApplicationController
   private
 
   def message_params
-    params.require(:message).permit(:body, :image).merge(user_id: current_user.id)
+    params.require(:message).permit(:body, :image)
   end
 
   def set_group
