@@ -3,8 +3,8 @@
 # Table name: messages
 #
 #  id         :bigint(8)        not null, primary key
-#  body       :string(255)
-#  image      :string(255)
+#  body       :string(255)      default("")
+#  image      :string(255)      default("")
 #  group_id   :bigint(8)
 #  user_id    :bigint(8)
 #  created_at :datetime         not null
