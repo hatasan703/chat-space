@@ -4,7 +4,5 @@
   .message__date
     = message.created_at
   .message__user-message
-    - if message.body.present?
-      .message__content
-        = message.body
-    = image_tag message.image_url, class: "message__user-image" if message.image_present
+    = message.body_present
+  = image_tag message.image_url, class: "message__user-image"

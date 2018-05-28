@@ -6,11 +6,12 @@ class MessageDecorator < Draper::Decorator
   end
 
   def image_url
-    object.image.url
+    message.image.present? ? object.image.url : ""
   end
 
-  def image_present
-    object.image.present?
+  def body_present
+    message.body.present? ? message.body : ""
   end
+
 end
 
