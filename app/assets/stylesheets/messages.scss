@@ -35,6 +35,7 @@
   .groups {
     height: calc(100vh - 100px);
     padding: 0 20px;
+    overflow: scroll;
 
     .group {
       height: 45px;
@@ -90,7 +91,7 @@
           }
         }
     }
-    .edit-button {
+    .group_edit_btn {
       border: 1px solid $light_blue;
       color: $light_blue;
       float: right;
@@ -98,6 +99,7 @@
       padding: 0 20px;
       margin-top: 28px;
       line-height: 40px;
+      text-decoration: none;
     }
   }
   .messages {
@@ -105,6 +107,7 @@
     box-sizing: border-box;
     background-color: $light_grey;
     padding: 46px 40px 0;
+    overflow: scroll;
 
     .message {
       margin-bottom: 40px;
@@ -160,6 +163,9 @@
       font-size: 17px;
       margin-left: 15px;
       color: $form_white;
+    }
+    .file_field {
+      display: none;
     }
   }
 }

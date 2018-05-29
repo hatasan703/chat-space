@@ -11,13 +11,6 @@
 class Group < ApplicationRecord
   has_many :group_users
   has_many :users, through: :group_users
+  has_many :messages
   validates :name, uniqueness: true, presence: true
-
-  def error_messages_count
-    self.error_messages.size
-  end
-
-  def error_messages
-    self.errors.full_messages
-  end
 end
