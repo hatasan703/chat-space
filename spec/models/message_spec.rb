@@ -11,6 +11,9 @@ RSpec.describe Message, type: :model do
       it 'is valid with image' do
         expect(build(:message, body:  nil)).to be_valid
       end
+
+      it 'is valid with body and image' do expect(build(:message)).to be_valid
+      end
     end
 
     body 'can not save' do
