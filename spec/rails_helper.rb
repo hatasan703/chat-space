@@ -27,10 +27,7 @@ require 'rspec/rails'
 ActiveRecord::Migration.maintain_test_schema!
 
 RSpec.configure do |config|
-<<<<<<< HEAD
   config.include FactoryBot::Syntax::Methods
-=======
->>>>>>> 5c91782e2bebdc18ed5679f07340b5d72a18fe61
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
   config.fixture_path = "#{::Rails.root}/spec/fixtures"
 

@@ -43,12 +43,8 @@ group :development, :test do
   gem 'annotate'
   gem 'rspec-rails', '~> 3.5'
   gem 'rails-controller-testing'
-<<<<<<< HEAD
   gem "factory_bot_rails"
   gem 'faker'
-=======
-  gem 'factory_girl_rails', '~> 4.0'
->>>>>>> 5c91782e2bebdc18ed5679f07340b5d72a18fe61
 end
 
 group :development do

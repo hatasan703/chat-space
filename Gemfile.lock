@@ -93,7 +93,6 @@ GEM
     erubi (1.7.1)
     erubis (2.7.0)
     execjs (2.7.0)
-<<<<<<< HEAD
     factory_bot (4.10.0)
       activesupport (>= 3.0.0)
     factory_bot_rails (4.10.0)
@@ -101,13 +100,6 @@ GEM
       railties (>= 3.0.0)
     faker (1.8.7)
       i18n (>= 0.7)
-=======
-    factory_girl (4.9.0)
-      activesupport (>= 3.0.0)
-    factory_girl_rails (4.9.0)
-      factory_girl (~> 4.9.0)
-      railties (>= 3.0.0)
->>>>>>> 5c91782e2bebdc18ed5679f07340b5d72a18fe61
     ffi (1.9.23)
     font-awesome-rails (4.7.0.4)
       railties (>= 3.2, < 6.0)
@@ -285,12 +277,8 @@ DEPENDENCIES
   devise
   draper
   erb2haml
-<<<<<<< HEAD
   factory_bot_rails
   faker
-=======
-  factory_girl_rails (~> 4.0)
->>>>>>> 5c91782e2bebdc18ed5679f07340b5d72a18fe61
   font-awesome-rails
   haml-rails
   jbuilder (~> 2.5)
