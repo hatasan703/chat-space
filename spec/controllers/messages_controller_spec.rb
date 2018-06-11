@@ -71,6 +71,11 @@ describe MessagesController do
         it "does not count up" do
           expect{ subject }.not_to change(Message, :count)
         end
+
+        it "renders index" do
+          subject
+          expect(response).to render_template :index
+        end
       end
     end
 
