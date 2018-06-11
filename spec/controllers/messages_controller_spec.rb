@@ -44,7 +44,7 @@ describe MessagesController do
         login user
       end
 
-      context "can not save" do
+      context "can save" do
       end
 
       context "can not save" do
