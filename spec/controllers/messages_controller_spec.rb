@@ -35,4 +35,20 @@ describe MessagesController do
       end
     end
   end
+
+  describe "#create" do
+    let(:params) { { group_id: group.id, user_id: user.id, message:attributes_for(message) } }
+
+    context "log in" do
+      before do
+        login user
+      end
+
+      context "can not save" do
+      end
+
+      context "can not save" do
+      end
+    end
+  end
 end
