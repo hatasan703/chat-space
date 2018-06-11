@@ -54,14 +54,14 @@ describe MessagesController do
           expect{ subject }.to change{Message, :count}.by(1)
         end
 
-        it "redirects to group_message_path" do
+        it "redirects to group_messages_path" do
           subject
-          expect(response).to redirect_to(group_message_path(group))
+          expect(response).to redirect_to(group_messages_path(group))
         end
       end
 
       context "can not save" do
-        let(:invaild_params) { { group_id: group.id: user.id, message: attributes_for(:message, content: nil, image: nil) } }
+        let(:invaild_params) { { group_id: group.id, user_id: user.id,message: attributes_for(:message, content: nil, image: nil) } }
 
         subject {
           post :create,
