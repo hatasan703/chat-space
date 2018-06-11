@@ -50,5 +50,12 @@ describe MessagesController do
       context "can not save" do
       end
     end
+
+    context "not log in" do
+      before do
+        get :create, params: params
+      end
+
+    end
   end
 end
