@@ -51,7 +51,7 @@ describe MessagesController do
         }
 
         it "count up message" do
-          expect{ subject }.to change{Message, :count}.by(1)
+          expect{ subject }.to change(Message, :count).by(1)
         end
 
         it "redirects to group_messages_path" do
@@ -61,11 +61,11 @@ describe MessagesController do
       end
 
       context "can not save" do
-        let(:invaild_params) { { group_id: group.id, user_id: user.id,message: attributes_for(:message, content: nil, image: nil) } }
+        let(:invalid_params) { { group_id: group.id, user_id: user.id,message: attributes_for(:message, content: nil, image: nil) } }
 
         subject {
           post :create,
-          params: invaild_params
+          params: invalid_params
         }
 
         it "does not count up" do
@@ -85,7 +85,6 @@ describe MessagesController do
         post :create, params: params
         expect(response).to redirect_to(new_user_session_path)
       end
-
     end
   end
 end
