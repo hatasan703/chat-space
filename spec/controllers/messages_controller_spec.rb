@@ -80,8 +80,10 @@ describe MessagesController do
     end
 
     context "not log in" do
-      before do
-        get :create, params: params
+
+      it "redirects to new_user_session_path" do
+        post :create, params: params
+        expect(response).to redirect_to(new_user_session_path)
       end
 
     end
