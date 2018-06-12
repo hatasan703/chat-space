@@ -37,7 +37,7 @@ describe MessagesController do
   end
 
   describe "#create" do
-    let(:params) { { group_id: group.id, user_id: user.id, message:attributes_for(message) } }
+    let(:params) { { group_id: group.id, user_id: user.id, message: attributes_for(:message) } }
 
     context "log in" do
       before do
@@ -61,7 +61,7 @@ describe MessagesController do
       end
 
       context "can not save" do
-        let(:invalid_params) { { group_id: group.id, user_id: user.id,message: attributes_for(:message, content: nil, image: nil) } }
+        let(:invalid_params) { { group_id: group.id, user_id: user.id, message: attributes_for(:message, body: nil, image: nil) } }
 
         subject {
           post :create,
