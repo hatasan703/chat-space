@@ -1,18 +1,21 @@
 $(function(){
   function buildHTML(message){
-
+    var image_url = "";
+    if (message.image) {
+      image_url = `<img src="${message.image}">`
+    }
     var html = `<div class="message">
                   <div class="message__user-name">
                     ${message.user_name}
                   </div>
                   <div class="message__date">
-                    ${message.created_at}
+                    ${message.created}
                   </div>
                   <div class="message__user-message">
                     ${message.body}
                   </div>
                   <div class="message__user-image">
-                    ${ message.image_url }
+                    ${image_url}
                   </div>
                 </div>`
     return html;
@@ -26,7 +29,6 @@ $(function(){
     e.preventDefault();
     var formData = new FormData(this);
     var url = $(this).attr("action");
-    // $('.form__submit').removeAttr('data-disable-with')
     $.ajax({
       url: url,
       type: 'POST',
