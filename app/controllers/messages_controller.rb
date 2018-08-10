@@ -5,6 +5,10 @@ class MessagesController < ApplicationController
     @message = Message.new
     @messages = @group.messages.includes(:user).decorate
     @current_user_groups = GroupDecorator.decorate_collection(current_user.groups)
+    respond_to do |format|
+      format.html
+      format.json
+    end
   end
 
   def create
@@ -32,5 +36,3 @@ class MessagesController < ApplicationController
     @group = Group.find(params[:group_id])
   end
 end
-
-
