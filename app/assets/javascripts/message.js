@@ -5,7 +5,6 @@ $(function(){
       image_url = `<img src="${message.image}">`
     }
     var html = `<div class='message' data-id="${message.id}">
-                <div class="message">
                   <div class="message__user-name">
                     ${message.user_name}
                   </div>
