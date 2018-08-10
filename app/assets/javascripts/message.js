@@ -4,7 +4,8 @@ $(function(){
     if (message.image) {
       image_url = `<img src="${message.image}">`
     }
-    var html = `<div class="message">
+    var html = `
+                <div class="message">
                   <div class="message__user-name">
                     ${message.user_name}
                   </div>
@@ -45,7 +46,27 @@ $(function(){
         scroll()
     })
     .fail(function(){
-      alert('error');
+      alert('メッセージの送信に失敗しました');
     })
   })
+
+  var interval = setInterval(function() {
+      if (location.href.match(/\/groups\/\d+\/messages/)) {
+    $.ajax({
+      url: location.href.json,
+      type: 'GET',
+      dataType: 'json'
+    })
+
+    .done(function(data) {
+
+    })
+
+    .fail(function(data) {
+
+    });
+    } else {
+    clearInterval(interval);
+   }} , 5 * 1000 );
 });
+
