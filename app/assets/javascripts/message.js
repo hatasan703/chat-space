@@ -59,11 +59,19 @@ $(function(){
     })
 
     .done(function(data) {
-
+      var last_message_id = $('.message').last().data('id');
+      var insertHTML = '';
+      data.messages.forEach(function(message) {
+        if (message.id > last_message_id ) {
+          insertHTML += buildHTML(message);
+        }
+      });
+      $('.messages').append(insertHTML);
+    scroll()
     })
 
     .fail(function(data) {
-
+      alert('自動更新に失敗しました');
     });
     } else {
     clearInterval(interval);
