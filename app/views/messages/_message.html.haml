@@ -1,0 +1,8 @@
+.message{data: {id: "#{message.id}"}}
+  .message__user-name
+    = message.user.name
+  .message__date
+    = message.created_at
+  .message__user-message
+    = message.body
+  = image_tag message.image_url, class: "message__user-image"

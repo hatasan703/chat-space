@@ -1,0 +1,176 @@
+.side_content {
+  width: 300px;
+  color: $white;
+  background-color: $navy;
+
+  .header {
+    height: 100px;
+    background-color: $dark_navy;
+    padding: 0 20px;
+
+    &__name {
+      display: inline-block;
+      height: 100px;
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 100px;
+    }
+
+    &__icons {
+      float: right;
+      height: 100px;
+      width: 35.05px;
+
+      .icon_list {
+        display: inline-block;
+        height: 100px;
+        line-height: 100px;
+        i {
+          color: $white;
+        }
+      }
+    }
+  }
+
+  .groups {
+    height: calc(100vh - 100px);
+    padding: 0 20px;
+    overflow: scroll;
+
+    .group {
+      height: 45px;
+      width: 260px;
+      padding: 20px 0 40px;
+      text-decoration: underline;
+      text-decoration-color: purple;
+       &:active {
+          text-decoration: underline;
+          text-decoration-color: red;
+        }
+
+      &__name {
+        font-size: 15px;
+        color: $white;
+      }
+      &__message {
+        font-size: 11px;
+        margin-top: 5px;
+        color: $white;
+      }
+    }
+  }
+}
+
+.main_content {
+  width: calc(100% - 300px);
+  position: absolute;
+  top: 0px;
+  right: 0px;
+
+  .header {
+    height: 100px;
+    padding: 0 40px;
+
+    .left-header{
+      float: left;
+      width: 215.73px;
+      height: 98px;
+
+      &__title {
+        font-size: 20px;
+        margin-top: 35px;
+      }
+      &__members {
+          font-size: 12px;
+          margin-top: 15px;
+          color: $grey;
+
+          .member {
+            padding-right: 5px;
+            display: inline-block;
+          }
+        }
+    }
+    .group_edit_btn {
+      border: 1px solid $light_blue;
+      color: $light_blue;
+      float: right;
+      height: 40px;
+      padding: 0 20px;
+      margin-top: 28px;
+      line-height: 40px;
+      text-decoration: none;
+    }
+  }
+  .messages {
+    height: calc(100vh - 190px);
+    box-sizing: border-box;
+    background-color: $light_grey;
+    padding: 46px 40px 0;
+    overflow: scroll;
+
+    .message {
+      margin-bottom: 40px;
+
+        &__user-name {
+          font-size: 16px;
+          color: $dark_grey;
+          font-weight: bold;
+          display: inline-block;
+          margin-bottom: 10px;
+        }
+        &__date {
+          color: $grey;
+          font-size: 12px;
+          padding-left: 10px;
+          display: inline-block;
+          margin-bottom: 10px;
+        }
+        &__user-message {
+          color: $dark_grey;
+          font-size: 14px;
+        }
+    }
+  }
+  .form {
+    height: 90px;
+    background-color: $silver_grey;
+    padding: 20px 50px 20px 40px;
+    box-sizing: border-box;
+
+    &__message {
+      height: 50px;
+      width: calc(100% - 150px);
+      padding : 0 10px;
+      box-sizing: border-box;
+      border: none;
+      float:left;
+    }
+    &_photo_icon {
+      line-height: 50px;
+      font-size: 20px;
+      height: 50px;
+      float: left;
+      padding-right: 10px;
+      background-color: $form_white;
+    }
+    &__submit {
+      height: 50px;
+      border: none;
+      background-color: $light_blue;
+      float: right;
+      padding: 0 30px;
+      font-size: 17px;
+      margin-left: 15px;
+      color: $form_white;
+    }
+    .file_field {
+      display: none;
+    }
+  }
+}
+
+
+
+
+
