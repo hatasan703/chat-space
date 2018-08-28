@@ -22,3 +22,4 @@ public/
 vendor/
 spec/*
 test/*
+config/secrets.yml
