@@ -66,7 +66,6 @@ $(function(){
         }
       });
       $('.messages').append(insertHTML);
-    scroll()
     })
 
     .fail(function(data) {
