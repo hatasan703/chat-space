@@ -18,9 +18,10 @@ $(function() {
                 </div>`
     $("#chat-group-users").append(html)
   }
-  $(function() {
+
     $("#user-search-field").on("keyup", function() {
       var input = $("#user-search-field").val();
+      if(input !== ""){
         $.ajax({
           type: 'GET',
           url: '/users',
@@ -30,17 +31,18 @@ $(function() {
 
       .done(function(users){
         $("#user-search-result").empty();
-        if (users.lengt !== 0) {
           users.forEach(function(user){
             appendSearchUser(user);
           })
-        }
       })
       .fail(function(){
         alert('ユーザー検索に失敗しました');
       });
-    });
-});
+    }
+    else{
+      $('#user-search-result').remove();
+    }
+  });
   $(function() {
     $(document).on("click", '.user_search_add', function() {
       var name = $(this).attr("data-user-name");
